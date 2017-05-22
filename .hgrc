@@ -1,0 +1,7 @@
+[web]
+allow_push = *
+push_ssl = false
+
+[ui]
+username = CBodley <chris.matthew.bodley@gmail.com>
+verbose = True

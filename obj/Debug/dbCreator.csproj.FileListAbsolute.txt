@@ -1,0 +1,10 @@
+C:\Users\Chris\Desktop\dbCreator\dbCreator\bin\Debug\dbCreator.exe.config
+C:\Users\Chris\Desktop\dbCreator\bin\Debug\dbCreator.exe.config
+C:\Users\Chris\Desktop\dbCreator\bin\Debug\dbCreator.exe.manifest
+C:\Users\Chris\Desktop\dbCreator\bin\Debug\dbCreator.application
+C:\Users\Chris\Desktop\dbCreator\bin\Debug\dbCreator.exe
+C:\Users\Chris\Desktop\dbCreator\bin\Debug\dbCreator.pdb
+C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.exe.manifest
+C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.application
+C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.exe
+C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.pdb
