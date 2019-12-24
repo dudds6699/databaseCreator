@@ -4,10 +4,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.SqlServer;
-using Microsoft.SqlServer.Management.Common;
-using Microsoft.SqlServer.Management.Smo;
 using System.IO;
+using System.Text.RegularExpressions;
 
 
 namespace dbCreator
@@ -18,8 +16,6 @@ namespace dbCreator
         public string ConnectionString { get; set; }
         private const string token = "#dbname";
         private List<fileRun> fileText { get; set; }
-        private SqlConnection conn { get; set; }
-        private Server server { get; set; }
         private string dbName { get; set; }
 
         public SqlRunner(string Location, string connection, string name)
@@ -27,10 +23,8 @@ namespace dbCreator
             dbName = name;
             FilesLocation = Location;
             ConnectionString = connection;
-            conn = new SqlConnection(ConnectionString);
-            server = new Server(new ServerConnection(conn));
-            fileText = new List<fileRun>();         
 
+            fileText = new List<fileRun>();
         }
 
         public SqlRunner(string Location)
@@ -51,15 +45,32 @@ namespace dbCreator
 
         public void runScripts()
         {
-            Console.WriteLine("");
-            foreach (var file in fileText)
+            using (var conn = new SqlConnection(ConnectionString))
             {
-               
+                conn.Open();
+                Console.WriteLine("");
+                foreach (var file in fileText)
+                {
+
+                    IEnumerable<string> commandStrings = Regex.Split(file.fileText, @"^\s*GO\s*$",
+                        RegexOptions.Multiline | RegexOptions.IgnoreCase);
+
+                    foreach (var cmd in commandStrings)
+                    {
+                        if (cmd.isNullOrEmpty() == false)
+                        {
+                            var command = conn.CreateCommand();
+                            command.CommandText = cmd;
+                            command.ExecuteNonQuery();
+                        }
+                    }
 
 
-                    server.ConnectionContext.ExecuteNonQuery(file.fileText);
                     Console.WriteLine(file.fileName);
-              
+
+                }
+                Console.WriteLine("END OF LINE");
+                conn.Close();
             }
         }
     }
@@ -76,4 +87,14 @@ namespace dbCreator
             this.fileName = name.Split('\\').Last();
         }
     }
+
+    public static class frack
+    {
+        public static bool isNullOrEmpty(this string str)
+        {
+           return string.IsNullOrWhiteSpace(str);
+        }
+    }
 }
+
+

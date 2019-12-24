@@ -8,3 +8,16 @@ C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.exe.manifest
 C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.application
 C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.exe
 C:\Users\Chris\Desktop\dbCreator\obj\Debug\dbCreator.pdb
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\dbCreator.exe.config
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\dbCreator.exe.manifest
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\dbCreator.application
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\dbCreator.exe
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\dbCreator.pdb
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Debug\dbCreator.exe.manifest
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Debug\dbCreator.application
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Debug\dbCreator.exe
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Debug\dbCreator.pdb
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Debug\dbCreator.csprojResolveAssemblyReference.cache

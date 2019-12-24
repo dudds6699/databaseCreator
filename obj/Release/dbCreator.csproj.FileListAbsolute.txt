@@ -1,0 +1,12 @@
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Release\dbCreator.exe.config
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Release\dbCreator.exe.manifest
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Release\dbCreator.application
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Release\dbCreator.exe
+C:\Users\cbodley\SSMIC\databaseCreator\bin\Release\dbCreator.pdb
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Release\dbCreator.exe.manifest
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Release\dbCreator.application
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Release\dbCreator.exe
+C:\Users\cbodley\SSMIC\databaseCreator\obj\Release\dbCreator.pdb
+K:\databaseCreator\bin\Release\dbCreator.exe.config
+K:\databaseCreator\obj\Release\dbCreator.exe
+K:\databaseCreator\obj\Release\dbCreator.pdb
